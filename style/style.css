@@ -1,0 +1,118 @@
+div,p,span{
+    font-family: 'Zilla Slab', serif;
+}
+body {
+    background-image: url('../img/bg.png');
+    color: #fff;
+}
+
+#question {
+    padding: 2% 2%;
+    background: #2b2b2b;
+    border-radius: 18px;
+    font-size: 25px;
+    text-align: center;
+}
+#answer-div {
+    /* height: 100px; */
+    /* border: 2px solid #fff; */
+    /* border-radius: 18px; */
+    padding: 1% 2%;
+    font-size: 35px;
+    background: #2b2b2b;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    align-items: center;
+    border-radius: 18px;
+}
+.white-border {
+    border: 2px solid #fff;
+}
+.green-border {
+    border: 2px solid #9dffad;
+}
+
+#start-btn, #close-btn {
+    font-weight: 700;
+    background: #000;
+    border: 2px solid #9dffad;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px  115px;
+    font-family: system-ui;
+}
+
+/* history css */
+#history {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.lines {
+    height: 2px;
+    background: #fff;
+    width: 100%;
+}
+#history-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+div#date-div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* modal */
+
+#result-div, #counter {
+    max-width: 400px;
+    text-align: center;
+    border: 2px solid #9dffad;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#modal {
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    background: rgba(63, 63, 63, 0.3);
+    top: 0;
+    backdrop-filter: blur(4px);
+}
+
+/* rotate css */
+
+.rotation {
+    transform: rotate(360deg);
+    transition: .3s;
+}
+/*  */
+
+.green{
+    color: #9dffad;
+}
+.tomato{
+    color: tomato;
+}
+
+/* responsive */
+
+@media(max-width: 992px) {
+    #history-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 768px) {
+    #history-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+  
